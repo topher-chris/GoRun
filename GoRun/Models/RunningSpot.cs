@@ -12,8 +12,8 @@ namespace GoRun.Models
         public string LocationName { get; set; }
 
         [DataType(DataType.Date)]
-        public DateTime ReleaseDate { get; set; }
-        public string Genre { get; set; }
-        public decimal LocationAddress { get; set; }
+        public DateTime SubmissionDate { get; set; }
+        public string LocationType { get; set; }
+        public decimal Rate { get; set; }
     }
 }

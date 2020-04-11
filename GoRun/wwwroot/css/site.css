@@ -1,4 +1,7 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+﻿/*
+
+
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
 a.navbar-brand {
@@ -68,4 +71,431 @@ body {
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
+}
+
+*/
+
+/* This is from my other project, QuickRun*/
+/*THE FIRST CODE HERE, IS CSS RESET STYLING*/
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+    nav ul {
+        list-style: none;
+    }
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+
+/*OUR CODE STARTS HERE!!! - MY CODE*/
+
+/*ALL HTML elements gets this styling*/
+* {
+    text-decoration: none;
+}
+
+/*Here we style the header for the mobile version*/
+header {
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+}
+
+    header .header-brand {
+        font-family: Catamaran;
+        font-size: 24px;
+        font-weight: 900;
+        color: #111;
+        text-transform: uppercase;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    header nav ul {
+        display: block;
+        margin: 0 auto;
+        width: fit-content;
+    }
+
+        header nav ul li {
+            display: inline-block;
+            float: left;
+            list-style: none;
+            padding: 0 16px;
+        }
+
+            header nav ul li a {
+                font-family: Catamaran;
+                font-size: 16px;
+                color: #111;
+                text-transform: uppercase;
+            }
+
+    header .header-cases {
+        display: none;
+    }
+
+/*Here we style the header for the desktop version*/
+@media only screen and (min-width: 1000px) {
+    header .header-brand {
+        margin: 31px 0;
+        text-align: left;
+        line-height: 38px;
+        padding: 0 20px 0 40px;
+        border-right: 3px solid #111;
+        float: left;
+    }
+
+    header nav ul {
+        margin: 20px 0px 0px 20px;
+        float: left;
+    }
+
+        header nav ul li a {
+            line-height: 60px;
+        }
+
+    header .header-cases {
+        display: block;
+        font-family: Catamaran;
+        font-size: 16px;
+        color: #111;
+        text-transform: uppercase;
+        line-height: 38px;
+        border: 1px solid #111;
+        float: right;
+        margin-right: 40px;
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+}
+
+/*INDEX*/
+/*Here we style the main content for the mobile version*/
+.index-banner {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url('https://github.com/topher-chris/RunApp/blob/master/images/banner.jpg?raw=true');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.index-banner h2 {
+    font-family: Catamaran;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 70px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+}
+
+.index-banner h1 {
+    font-family: Cormorant Garamond;
+    font-size: 28px;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+}
+
+.index-links div {
+    margin: 16px 16px 0;
+    width: calc(100% - 32px);
+    height: 100px;
+    background-color: #f2f2f2;
+}
+
+    .index-links div h3 {
+        font-family: Catamaran;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 100px;
+        color: #111;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+/*Here we style the main content for the desktop version*/
+@media only screen and (min-width: 1000px) {
+    .wrapper {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .index-banner {
+        height: 450px;
+    }
+
+        .index-banner h1 {
+            display: block;
+            width: 560px;
+            margin: 0 auto;
+        }
+
+    .index-links {
+        overflow: hidden;
+    }
+
+        .index-links div {
+            margin: 20px 10px 0;
+            height: 230px;
+            background-color: #f2f2f2;
+            float: left;
+        }
+
+    .index-boxlink-beach {
+        width: calc(45% - 25px) !important;
+        background-image: url('https://github.com/topher-chris/RunApp/blob/master/images/beach.jpg?raw=true');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: table;
+    }
+
+    .index-boxlink-public {
+        width: calc(50% - 20px) !important;
+        background-image: url('https://github.com/topher-chris/RunApp/blob/master/images/public.jpg?raw=true');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: table;
+    }
+
+    .index-boxlink-rectangle {
+        width: calc(50% - 20px) !important;
+        background-image: url('https://github.com/topher-chris/RunApp/blob/master/images/Lake.jpg?raw=true');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: table;
+    }
+
+    .index-boxlink-square {
+        width: calc(40% - 20px) !important;
+        width: calc(35% - 25px) !important;
+        background-image: url('https://github.com/topher-chris/RunApp/blob/master/images/ParkPavement.jpg?raw=true');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: table;
+    }
+
+    .index-boxlink-hill {
+        width: calc(40% - 20px) !important;
+        background-image: url('https://github.com/topher-chris/RunApp/blob/master/images/hill.jpg?raw=true');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: table;
+    }
+
+    .index-boxlink-roughterrain {
+        width: calc(45% - 25px) !important;
+        background-image: url('https://github.com/topher-chris/RunApp/blob/master/images/roughTerrain.JPG?raw=true');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: table;
+    }
+
+    .index-boxlink-trail {
+        width: calc(45% - 20px) !important;
+        background-image: url('https://github.com/topher-chris/RunApp/blob/master/images/terrain.jpg?raw=true');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: table;
+        .index-links div h3
+
+{
+    line-height: 230px;
+}
+
+}
+
+/*FOOTER*/
+/*Here we style the footer for the mobile version*/
+footer {
+    width: calc(100% - 80px);
+    padding: 40px 40px;
+    margin-top: 20px;
+    background-color: #111;
+    overflow: hidden;
+}
+
+    footer ul {
+        width: fit-content;
+        float: left;
+        padding-left: 20px;
+    }
+
+        footer ul li {
+            display: block;
+            list-style: none;
+        }
+
+            footer ul li a {
+                font-family: Catamaran;
+                font-size: 24px;
+                color: #fff;
+                line-height: 40px;
+            }
+
+.footer-links-cases {
+    display: none;
+}
+
+.footer-sm {
+    width: 50px;
+    float: right;
+}
+
+    .footer-sm img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+/*Here we style the footer for the desktop version*/
+@media only screen and (min-width: 1000px) {
+    .footer-links-cases {
+        display: block;
+    }
+
+    footer ul {
+        padding-right: 30px;
+    }
+
+        footer ul li p {
+            font-family: Catamaran;
+            font-size: 24px;
+            color: #fff;
+            line-height: 40px;
+            text-transform: uppercase;
+        }
+}
+
+<div class="w3-third" >
+<img src="img/banner.jpg'" style="width:100%" >
+<img src="/w3images/bridge.jpg" style="width:100%" >
+/* Images used */
+.img1 {
+    background-image: url("https://redtricom.files.wordpress.com/2019/08/crest-canyon.jpg?w=605");
+}
+
+
+.img2 {
+    background-image: url("https://www.spinlister.com/blog/wp-content/uploads/2017/07/fiesta-island-2-1024x600.jpg");
+}
+
+.img3 {
+    background-image: url("https://lh3.googleusercontent.com/proxy/55JbXwGNtyBOuydxPslSOOswCshwhWxec5qYlChzPvOMSkUUucGK_utHVFfl0VNkipQgod6Cyl6E_8mybc5R4RZw1GCR0qSxGE7pKAQ0CE4v_w9-EZSR4fiZ8yBPoP4Z_0t4PEcv");
+}
+
+.img4 {
+    background-image: url("https://ak8.picdn.net/shutterstock/videos/1006758298/thumb/1.jpg");
+}
+
+.img5 {
+    background-image: url("https://www.californiabeaches.com/wp-content/uploads/2014/09/Sunset-Point-Mission-Bay-San-Diego-BryceApr16-8-1000x696.jpg");
+}
+
+.img6 {
+    background-image: url("https://assets1.roadtrippers.com/uploads/poi_gallery_image/image/374268549/-quality_60_-interlace_Plane_-resize_640x360_U__-gravity_center_-extent_640x360/poi_gallery_image-image-93a09161-6bf9-4c7f-abd3-7b89ac0dd3b5.jpg");
 }
