@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 
 namespace GoRun.Models
 {
-    public class RunningSpot
+    public partial class RunningSpot
     {
         public int Id { get; set; }
         public string LocationName { get; set; }
