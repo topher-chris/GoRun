@@ -27,7 +27,7 @@ namespace GoRun
         {
             services.AddControllersWithViews();
             services.AddDbContext<GoRunContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("GoRunContext2")));
+            options.UseSqlServer(Configuration.GetConnectionString("GoRunContext3")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
