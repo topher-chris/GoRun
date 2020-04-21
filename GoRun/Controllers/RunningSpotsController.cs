@@ -144,7 +144,6 @@ namespace GoRun.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
         private bool RunningSpotExists(int id)
         {
             return _context.RunningSpot.Any(e => e.Id == id);

@@ -15,5 +15,6 @@ namespace GoRun.Data
         }
 
         public DbSet<RunningSpot> RunningSpot { get; set; }
+        public DbSet<RunningSpot> Rate { get; set; }
     }
 }
