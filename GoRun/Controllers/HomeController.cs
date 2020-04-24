@@ -34,7 +34,9 @@ namespace GoRun.Controllers
         }
 
         public IActionResult DataChart()
-        {
+        {            
+
+
             return View();
         }
 

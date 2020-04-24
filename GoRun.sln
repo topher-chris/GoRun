@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoRun", "GoRun\GoRun.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataChart", "DataChart\DataChart.csproj", "{1029A5BB-50AF-403E-BC2E-41171AF72213}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunChart", "RunChart\RunChart.csproj", "{5410EC2E-C0F1-4AF8-839B-5F5BEC024111}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RunChart", "RunChart\RunChart.csproj", "{5410EC2E-C0F1-4AF8-839B-5F5BEC024111}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
